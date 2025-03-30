@@ -87,6 +87,8 @@ jobs:
         git clone https://gitlab.com/OrangeFox/misc/scripts
         cd scripts
         export OF_USE_LZMA_COMPRESSION=1
+        export FOX_VANILLA_BUILD=1
+        export OF_DEFAULT_KEYMASTER_VERSION=4.1
         sudo bash setup/android_build_env.sh
       
     - name: Set-up Manifest
