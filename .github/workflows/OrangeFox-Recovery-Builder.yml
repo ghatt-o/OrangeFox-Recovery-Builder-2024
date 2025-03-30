@@ -14,7 +14,7 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree'
         required: true
-        default: 'https://github.com/kinguser981/android_device_xiaomi_marble-OFRP'
+        default: 'https://github.com/ghatt-o/android_device_samsung_r0q'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch'
         required: true
@@ -22,11 +22,11 @@ on:
       DEVICE_PATH:
         description: 'Specify your device path.'
         required: true
-        default: 'device/xiaomi/marble'
+        default: 'device/samsung/r0q'
       DEVICE_NAME:
         description: 'Specify your Device Codename.'
         required: true
-        default: 'marble'
+        default: 'r0q'
       BUILD_TARGET:
         description: 'Specify your Build Target'
         required: true
@@ -42,8 +42,8 @@ on:
         default: 'system/bin/qseecomd'
       RECOVERY_TAR:
         description: 'Release recovery.tar For Samsung devices'
-        required: false
-        default: false
+        required: true
+        default: true
         type: boolean
       RECOVERY_INSTALLER:
         description: 'Include recovery installer zip'
